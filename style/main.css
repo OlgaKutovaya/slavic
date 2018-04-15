@@ -81,43 +81,46 @@
 
 .description {
   margin: 20px 0;
-  background: url("../img/checked.png") no-repeat 15px 15px; }
+  background: url("../img/checked.png") no-repeat 65px 15px; }
   .description .text {
     padding: 15px 5px;
     text-align: center;
     font-size: 30px;
-    letter-spacing: 4px;
     color: #090947; }
   .description .text b {
     font-weight: 900; }
 
 .btn-wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 50px auto;
   padding: 5px; }
   .btn-wrapper .btn {
     outline: none;
-    padding: 10px 0;
-    width: 270px;
+    width: 280px;
+    height: 50px;
     border: 1px solid #e78c00;
     border-radius: 50px;
-    background: linear-gradient(to bottom, #fad35b 50%, #d6a510);
-    box-shadow: 2px 5px 25px 0 #cb9c0f;
+    background: url("../img/bg-btn.png") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0 8px 7px 0 #eedeae;
     text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 400; }
+    text-shadow: 0 0.2px 0 #000000;
+    font-size: 17px; }
     .btn-wrapper .btn:hover {
-      transform: scale(1.01);
-      transition: 0.1s linear;
+      background: url("../img/bg-hov.png") no-repeat;
+      background-size: 100% 100%;
+      box-shadow: 0 6px 15px 0 #e4c569, 0 7px 15px 0 #e6cb7a, 0 8px 15px 0 #f3e9cb;
+      transition: 0.2s linear;
       cursor: pointer; }
 
 .enter-link {
-  margin: 70px auto;
+  margin: 70px 0;
   display: block;
   width: 100px; }
   .enter-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: 0.4s linear; }
 
 .arrows-img {
@@ -140,7 +143,7 @@
 
 @media (max-width: 1370px) {
   .logo {
-    margin: 5% 5% 3%;
+    margin: 3% 5% 3%;
     width: 110px;
     height: 120px; }
   .heading {
@@ -149,17 +152,15 @@
   .main-heading {
     font-size: 75px; }
   .description {
-    margin: 10px 0;
-    background: url("../img/checked.png") no-repeat 40px 7px; }
+    margin: 25px 0;
+    background: url("../img/checked.png") no-repeat 60px 10px; }
     .description .text {
       padding: 10px 5px;
-      font-size: 25px; }
+      font-size: 30px; }
   .btn-wrapper {
     margin: 25px auto; }
-    .btn-wrapper .btn + .btn {
-      margin-left: 5px; }
   .enter-link {
-    margin: 50px auto 0; } }
+    margin: 30px 0 0; } }
 
 @media (max-width: 1240px) {
   .wrapper {
@@ -216,10 +217,13 @@
     flex-direction: column;
     align-items: center; }
     .btn-wrapper .btn {
-      margin-bottom: 10px;
-      width: 230px;
+      margin: 0 0 20px 0;
+      width: 220px;
       font-size: 13px; } }
 
 @media (max-width: 400px) {
   .enter-link {
-    margin: 20px auto; } }
+    margin: 20px auto; }
+    .enter-link .main-heading {
+      margin: 0 auto;
+      width: 230px; } }
